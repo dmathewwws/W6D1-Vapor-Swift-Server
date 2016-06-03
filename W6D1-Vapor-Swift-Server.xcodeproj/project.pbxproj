@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		129564611D00E3670095F544 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129564601D00E3670095F544 /* main.swift */; };
+		129564681D00E6310095F544 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129564671D00E6310095F544 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		1295645D1D00E3670095F544 /* W6D1-Vapor-Swift-Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "W6D1-Vapor-Swift-Server"; sourceTree = BUILT_PRODUCTS_DIR; };
-		129564601D00E3670095F544 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		129564671D00E6310095F544 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = Sources/main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +41,7 @@
 		129564541D00E3670095F544 = {
 			isa = PBXGroup;
 			children = (
+				129564671D00E6310095F544 /* main.swift */,
 				1295645F1D00E3670095F544 /* W6D1-Vapor-Swift-Server */,
 				1295645E1D00E3670095F544 /* Products */,
 			);
@@ -57,7 +58,6 @@
 		1295645F1D00E3670095F544 /* W6D1-Vapor-Swift-Server */ = {
 			isa = PBXGroup;
 			children = (
-				129564601D00E3670095F544 /* main.swift */,
 			);
 			path = "W6D1-Vapor-Swift-Server";
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				129564611D00E3670095F544 /* main.swift in Sources */,
+				129564681D00E6310095F544 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,13 +211,18 @@
 		129564651D00E3670095F544 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		129564661D00E3670095F544 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
